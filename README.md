@@ -1,6 +1,5 @@
 # E1000 Driver
 E1000 driver in Rust for the Intel 82540EP/EM Gigabit Ethernet.
-
 ## Support features
 * E1000 driver for RISCV on Qemu is supported
 * Initialize simple PCI-Express for e1000 device
@@ -31,6 +30,8 @@ let rx_buf = e1000_device.e1000_recv();
 ```
 
 ## Rust e1000 driver for Linux kernel module
+you can compile the driver with [fork of Linux kernel](https://github.com/fujita/linux/tree/rust-e1000)
+
 ```
 cd src/linux
 make KDIR=/path/to/linux
